@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for SUHEL KHAN – DevOps Engineer specializing in CI/CD, IaC and cloud native architectures."
+    />
+    <title>SUHEL KHAN – DevOps Portfolio</title>
+    <!-- Import Fira Code font for terminal styling -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="container nav-content">
+        <div class="brand">SUHEL KHAN</div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+  <li><a href="labs.html">Labs</a></li>
+        </ul>
+        <!-- Theme toggle button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          🌓
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 class="name">SUHEL KHAN</h1>
+          <h2 class="subtitle">DevOps Engineer</h2>
+          <p class="tagline">
+            <span id="typewriter"></span><span class="cursor">|</span>
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="AWS_DevOps_Engineer.......pdf" target="_blank" class="btn btn-secondary" id="download-resume"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-container">
+            <img
+              src="images/profile.jpg"
+              alt="SUHEL KHAN profile portrait"
+              class="hero-image"
+            />
+            <!-- Orbiting icons -->
+            <div class="icon-orbit">
+              <img src="images/icons/amazonaws.svg" alt="AWS" class="orbit-icon" />
+              <img src="images/icons/microsoftazure.svg" alt="microservices" class="orbit-icon" />
+              <img src="images/icons/docker.svg" alt="Docker" class="orbit-icon" />
+              <img src="images/icons/jenkins.svg" alt="Jenkins" class="orbit-icon" />
+              <img src="images/icons/terraform.svg" alt="Terraform" class="orbit-icon" />
+              <img src="images/icons/kubernetes.svg" alt="Kubernetes" class="orbit-icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container about-content">
+        <h2 class="about-title">About Me – SUHELOS™ Dynamic DevOps Console</h2>
+        <!-- Boot sequence panel -->
+        <pre id="boot-sequence" class="terminal-console boot-sequence about-block">
+> Booting ShivOS v3.0...
+✔️ GitOps Pipeline Engine Loaded
+✔️ Site Reliability Mode Engaged
+✔️ Platform Resilience Module Active
+✔️ Cloud Automation Interface Stable
+        </pre>
+        <!-- Universal introduction -->
+        <div class="about-intro about-block">
+          <h3> Introduction (DevOps&nbsp;|Cloud Engineer)</h3>
+          <p>
+            Hi, I'm a DevOps Engineer and <strong>AWS Certified Developer – Associate</strong> eager to launch my career in cloud infrastructure and automation. I've built a strong foundation in DevOps practices through hands-on training, personal projects, and continuous learning. I'm passionate about working with cloud platforms like AWS and open-source DevOps tools such as Docker, Git, and Terraform.
+
+Though I'm just starting out professionally, I've gained practical experience by simulating real-world environments, troubleshooting common infrastructure issues, and implementing CI/CD pipelines in test projects. I'm highly motivated, a quick learner, and comfortable working in fast-paced, evolving tech landscapes.
+
+I'm also developing strong 
+communication and collaboration skills, and I'm excited to apply my 
+knowledge to help
+ teams streamline their operations and scale efficiently.
+          </p>
+        </div>
+        <!-- Terminal identity snapshot -->
+        <pre class="terminal-console identity-snapshot about-block">
+$ whoami
+👤 SUHEL KHAN – DevOps & Cloud Engineer
+
+$ uptime --profile
+📍 Location: LUCKNOW, INDIA
+📡 Role: Available for Full‑Time|Intern Remote/Hybrid/ DevOps,Cloud Infra roles
+📈 Experience: 6 month | Pipelines: 5+ | Cost Savings: $150+/mo
+        </pre>
+        <!-- DevOps DNA core grid -->
+        <div class="dna-core about-block">
+          <h3>🧬 DevOps DNA Core</h3>
+          <ul class="dna-grid">
+            <li title="Used to provision EKS, Lambda, S3, IAM, Route 53 across projects">
+              ☁️ <strong>AWS</strong> – EKS, Lambda, S3, IAM, Route 53
+            </li>
+            <li title="15+ reusable modules deployed in prod/stg/dev">
+              ⚙️ <strong>Terraform</strong> – 15+ modular stacks across environments
+            </li>
+            <li title="Automatic GitOps sync to EKS clusters">
+              🔁 <strong>ArgoCD</strong> – GitOps powerhouse with auto‑sync to EKS
+            </li>
+            <li title="Clean multi‑stage container builds for all microservices">
+              🐳 <strong>Docker</strong> – Multi‑stage containerisation
+            </li>
+            <li title="Reusable Helm charts for seamless deployments">
+              ⚓ <strong>Helm</strong> – Charts for seamless app deployment
+            </li>
+            <li title="100+ metrics and alerts across microservices">
+              📈 <strong>Prometheus + Grafana</strong> – 100+ metrics, real‑time alerts
+            </li>
+            <li title="CI pipelines orchestrated via Jenkins and GitHub Actions">
+              🧪 <strong>Jenkins + GitHub Actions</strong> – CI across microservices
+            </li>
+            <li title="IAM scopes and secrets rotated automatically">
+              🔒 <strong>RBAC + Secrets Mgmt</strong> – IAM scoped, Secrets auto‑rotation
+            </li>
+          </ul>
+          <p class="dna-hint">(Hover items to see real project usage)</p>
+        </div>
+        <!-- Live monitoring panel -->
+        <pre class="terminal-console monitoring-panel about-block">
+> systemctl status shiv-platform.service
+
+🟢 EKS Cluster: UP
+🟢 CI/CD Pipeline: HEALTHY
+🟢 GitOps Sync: ENABLED
+🟢 Secrets Auto‑Rotate: ACTIVE
+🟢 MTTR: ↓ 40% | Uptime: 99.99% | Infra Cost Saved: $1500+/mo
+        </pre>
+        <!-- Final deployment block -->
+        <pre class="terminal-console final-deploy about-block">
+> deploy.shiv()
+✅ Infrastructure secured. Pipelines deployed. Monitoring online.
+        </pre>
+        <!-- Links and certs -->
+        <div class="about-links about-block">
+          <a href="https://www.linkedin.com/in/devops-engineer1/" target="_blank" class="about-link">
+            <img src="images/icons/linkedin.svg" alt="LinkedIn icon" class="link-icon" />
+            LinkedIn
+          </a>
+          <a href="https://github.com/SUHEL782" target="_blank" class="about-link">
+            <img src="images/icons/github.svg" alt="GitHub icon" class="link-icon" />
+            GitHub
+          </a>
+          <a href="AWS_DevOps_Engineer.......pdf" target="_blank" class="about-link" download>
+            <svg viewBox="0 0 24 24" fill="currentColor" class="link-icon">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm2 18H6V4h7v5h5v11z" />
+            </svg>
+            Resume
+          </a>
+        </div>
+        <div class="certifications about-block">
+          <span class="cert-chip">
+            <img src="images/icons/amazonaws.svg" alt="AWS" class="cert-icon" />
+            AWS SAA
+          </span>
+          <span class="cert-chip">
+            <img src="images/icons/kubernetes.svg" alt="Kubernetes" class="cert-icon" />
+            Kubernetes
+          </span>
+          <span class="cert-chip">
+            <img src="images/icons/terraform.svg" alt="Terraform" class="cert-icon" />
+            Terraform
+          </span>
+          <span class="cert-chip">
+            <img src="images/icons/jenkins.svg" alt="Jenkins" class="cert-icon" />
+            Jenkins
+          </span>
+          <span class="cert-chip">
+            <img src="images/icons/docker.svg" alt="Docker" class="cert-icon" />
+            Docker
+          </span>
+        </div>
+        <p class="mission-quote about-block">
+          “I deploy trust, not just code. I scale resilience, not just clusters.”
+        </p>
+        <div class="target-roles about-block">
+          <p><strong>Target Roles:</strong> DevOps Engineer · Site Reliability Engineer · Platform Infrastructure Engineer · Cloud Infrastructure Automation</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container skills-content">
+        <h2>Skills &amp; Stack</h2>
+        <div class="skills-columns">
+          <!-- Terminal Panel -->
+          <div class="terminal-panel">
+            <div class="terminal-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <!-- Lines will be populated via JS for animation -->
+              <div class="terminal-line">&gt; cloud --init</div>
+              <div class="terminal-line">✅ AWS &nbsp;&nbsp;✅ EKS &nbsp;&nbsp;✅ S3</div>
+              <div class="terminal-line">&gt; iac --deploy</div>
+              <div class="terminal-line">🛠️ Terraform &nbsp;&nbsp;🧠 Ansible</div>
+              <div class="terminal-line">&gt; cicd --trigger</div>
+              <div class="terminal-line">⚙️ Jenkins &nbsp;&nbsp;🔁 ArgoCD &nbsp;&nbsp;🌐 GitHub Actions</div>
+              <div class="terminal-line">&gt; monitor --watch</div>
+              <div class="terminal-line">📈 Prometheus &nbsp;&nbsp;📊 Grafana &nbsp;&nbsp;🔍 Loki</div>
+              <div class="terminal-line">&gt; secure --lockdown</div>
+              <div class="terminal-line">🔐 IAM &nbsp;&nbsp;🔑 Secrets &nbsp;&nbsp;🎛️ RBAC</div>
+            </div>
+          </div>
+          <!-- Icon Grid -->
+          <div class="icon-grid">
+            <!-- Each icon with tooltip via title attribute -->
+            <div class="icon-item" title="Amazon Web Services">
+              <img src="images/icons/amazonaws.svg" alt="AWS logo" />
+            </div>
+            <div class="icon-item" title="Microsoft Azure">
+              <img src="images/icons/microsoftazure.svg" alt="AWS logo" />
+            </div>
+            <div class="icon-item" title="Docker">
+              <img src="images/icons/docker.svg" alt="Docker logo" />
+            </div>
+            <div class="icon-item" title="Docker">
+              <img src="images/icons/github.svg" alt="Docker logo" />
+            </div>
+            <div class="icon-item" title="Jenkins">
+              <img src="images/icons/jenkins.svg" alt="Jenkins logo" />
+            </div>
+            <div class="icon-item" title="Terraform">
+              <img src="images/icons/terraform.svg" alt="Terraform logo" />
+            </div>
+            <div class="icon-item" title="Kubernetes">
+              <img src="images/icons/kubernetes.svg" alt="Kubernetes logo" />
+            </div>
+            <div class="icon-item" title="Helm">
+              <img src="images/icons/helm.svg" alt="Helm logo" />
+            </div>
+            <div class="icon-item" title="MongoDB">
+              <img src="images/icons/mongodb.svg" alt="MongoDB logo" />
+            </div>
+            <div class="icon-item" title="Prometheus">
+              <img src="images/icons/prometheus.svg" alt="Prometheus logo" />
+            </div>
+            <div class="icon-item" title="Grafana">
+              <img src="images/icons/grafana.svg" alt="Grafana logo" />
+            </div>
+            <div class="icon-item" title="Ansible">
+              <img src="images/icons/ansible.svg" alt="Ansible logo" />
+            </div>
+            <div class="icon-item" title="SonarQube">
+              <img src="images/icons/sonarqube.svg" alt="SonarQube logo" />
+            </div>
+            <div class="icon-item" title="Argo Workflows">
+              <img src="images/icons/argo.svg" alt="Argo logo" />
+            </div>
+            <div class="icon-item" title="Linux">
+              <img src="images/icons/linux.svg" alt="Linux logo" />
+            </div>
+            <div class="icon-item" title="Python">
+              <img src="images/icons/python.svg" alt="Python logo" />
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container projects-content">
+        <h2>Projects</h2>
+        <div class="project-cards">
+          <!-- Project 1 -->
+          <div class="project-card" data-modal="modal-project1">
+            <h3>BankApp – DevOps Pipeline</h3>
+            <p class="project-summary">
+              Full‑stack Java Spring Boot with MySQL; Infrastructure as Code with
+              Terraform for EKS, ALB and VPC; CI with Jenkins and GitHub
+              integrating SonarQube, Trivy and OWASP; CD with ArgoCD and Helm to
+              EKS; Monitoring via Prometheus, Grafana and Loki.
+            </p>
+            <button class="btn btn-outline">Read Case Study</button>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card" data-modal="modal-project2">
+            <h3>Multi‑Env Terraform + Ansible</h3>
+            <p class="project-summary">
+              Automated provisioning of EC2, S3 and DynamoDB across dev, staging
+              and prod environments. Hardened security with IAM policies, VPC
+              design and Security Groups. Configuration management with
+              Ansible delivered reproducible server states and accelerated
+              environment spin‑up.
+            </p>
+            <button class="btn btn-outline">Read Case Study</button>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card" data-modal="modal-project3">
+            <h3>Lambda Cost Optimizer</h3>
+            <p class="project-summary">
+              Python‑based scheduler leveraging CloudWatch and SNS to discover
+              stale EC2, EBS and Elastic IP resources and automatically remove
+              them. Generated weekly reports and proactive alerts to reduce
+              resource waste and cloud spend.
+            </p>
+            <button class="btn btn-outline">Read Case Study</button>
+          </div>
+        </div>
+      </div>
+      <!-- Modals for projects -->
+      <!-- Modal Project 1 -->
+      <div id="modal-project1" class="modal-overlay">
+        <div class="modal">
+          <button class="modal-close" aria-label="Close project 1">×</button>
+          <h3>BankApp – Comprehensive Case Study</h3>
+          <p>
+            A full‑stack banking application built with Java Spring Boot and
+            MySQL, deployed on an EKS cluster provisioned via Terraform. The
+            continuous integration pipeline was orchestrated with Jenkins and
+            GitHub, incorporating static code analysis (SonarQube), container
+            scanning (Trivy) and dependency checks (OWASP). Continuous
+            deployment leveraged Helm charts and ArgoCD to deliver container
+            images into Kubernetes. Observability was achieved through a
+            Grafana dashboard fed by Prometheus and Loki, delivering
+            real‑time metrics and log insights. The result? 70% faster
+            deployments, $1500/month cost savings and a 40% reduction in MTTR.
+          </p>
+        </div>
+      </div>
+      <!-- Modal Project 2 -->
+      <div id="modal-project2" class="modal-overlay">
+        <div class="modal">
+          <button class="modal-close" aria-label="Close project 2">×</button>
+          <h3>Multi‑Environment Terraform &amp; Ansible</h3>
+          <p>
+            Designed and implemented reusable Terraform modules to provision EC2
+            instances, S3 buckets and DynamoDB tables across multiple
+            environments (dev/stg/prod) with consistent IAM, VPC and security
+            group policies. Ansible playbooks configured the application layer
+            and system settings for each EC2 host, enabling idempotent,
+            repeatable deployments. This solution reduced environment spin‑up
+            time by 40% and delivered approximately 20% cost savings on AWS
+            consumption by right‑sizing resources.
+          </p>
+        </div>
+      </div>
+      <!-- Modal Project 3 -->
+      <div id="modal-project3" class="modal-overlay">
+        <div class="modal">
+          <button class="modal-close" aria-label="Close project 3">×</button>
+          <h3>Lambda Cost Optimizer</h3>
+          <p>
+            Developed a serverless Python solution that schedules periodic AWS
+            inventories via CloudWatch events. The Lambda function identifies
+            unused EC2 instances, orphaned EBS volumes and unattached Elastic
+            IPs, then cleans them up while notifying stakeholders through SNS.
+            Weekly summary reports provide transparency into the savings
+            generated by proactive resource management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container experience-content">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>DevOps Engineer – Bliss Ladders</h3>
+              <span class="timeline-period">Jan 2024 – Present</span>
+              <ul>
+                <li>
+                  Implemented CI/CD pipelines using GitHub Actions and ArgoCD,
+                  accelerating deployments by 70%.
+                </li>
+                <li>
+                  Created 15+ reusable Terraform modules for ALB, VPC, IAM,
+                  RDS and EKS infrastructure.
+                </li>
+                <li>
+                  Leveraged cluster autoscaling to save over $1500 per month on
+                  EKS resource costs while maintaining reliability.
+                </li>
+                <li>
+                  Built comprehensive monitoring dashboards with Grafana
+                  tracking 100+ metrics and logs via Prometheus and Loki.
+                </li>
+                <li>
+                  Hardened access control with IAM, RBAC and automated
+                  secrets rotation.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>DevOps Intern – Bliss Ladders</h3>
+              <span class="timeline-period">Jan 2023 – Dec 2023</span>
+              <ul>
+                <li>
+                  Managed Jenkins pipelines for 10+ applications with integrated
+                  Trivy, SonarQube and OWASP scanning.
+                </li>
+                <li>
+                  Adopted Infrastructure as Code with Terraform and GitOps
+                  practices to standardise resource provisioning.
+                </li>
+                <li>
+                  Configured Route 53 DNS failover to achieve 99.95% uptime.
+                </li>
+                <li>
+                  Integrated Slack and PagerDuty notifications to improve
+                  incident response time.
+                </li>
+                <li>
+                  Created Helm charts and established VPN‑secured VPC access.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Metrics Dashboard Section -->
+    <section id="metrics" class="metrics-section">
+      <div class="container metrics-content">
+        <h2>Live Metrics Dashboard</h2>
+        <div class="metrics-grid">
+          <div class="metric">
+            <span class="metric-value" data-target="500" data-suffix="+">0+</span>
+            <span class="metric-label">Deployments Completed</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value" data-target="99.99" data-suffix="%">0%</span>
+            <span class="metric-label">Uptime Guarantee</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value" data-target="40" data-suffix="%">0%</span>
+            <span class="metric-label">MTTR Reduction</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value" data-target="1500" data-prefix="$" data-suffix="/mo">$0/mo</span>
+            <span class="metric-label">Cost Savings</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pipeline Visualizer Section -->
+    <section id="pipeline" class="pipeline-section">
+      <div class="container pipeline-content">
+        <h2>DevOps Pipeline Flow</h2>
+        <div class="pipeline-flow">
+          <div class="pipeline-step" data-step="github">
+            <img src="images/icons/github.svg" alt="GitHub logo" />
+            <span>GitHub</span>
+          </div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step" data-step="jenkins">
+            <img src="images/icons/jenkins.svg" alt="Jenkins logo" />
+            <span>Jenkins</span>
+          </div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step" data-step="docker">
+            <img src="images/icons/docker.svg" alt="Docker logo" />
+            <span>Docker</span>
+          </div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step" data-step="sonarqube">
+            <img src="images/icons/sonarqube.svg" alt="SonarQube logo" />
+            <span>SonarQube</span>
+          </div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step" data-step="argo">
+            <img src="images/icons/argo.svg" alt="Argo logo" />
+            <span>ArgoCD</span>
+          </div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step" data-step="eks">
+            <img src="images/icons/kubernetes.svg" alt="Kubernetes logo" />
+            <span>EKS</span>
+          </div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step" data-step="grafana">
+            <img src="images/icons/grafana.svg" alt="Grafana logo" />
+            <span>Grafana</span>
+          </div>
+        </div>
+        <p class="pipeline-hint">Hover or wait to watch the pipeline flow animate.</p>
+      </div>
+    </section>
+
+    <!-- Labs Call To Action Section -->
+    <section id="labs-cta" class="labs-cta-section">
+      <div class="container labs-cta-content">
+        <h2>Explore My DevOps Labs</h2>
+        <p>
+          Curious about the inner workings of my DevOps toolkit? Visit the
+          interactive Labs page to experiment with the console, see a self‑healing
+          Kubernetes demo and explore an architecture topology.
+        </p>
+        <a href="labs.html" class="btn btn-primary">Go to Labs</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-content">
+        <h2>Get In Touch</h2>
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/shivkumararora/" target="_blank" title="LinkedIn">
+            <img src="images/icons/linkedin.svg" alt="LinkedIn icon" />
+          </a>
+          <a href="https://github.com/shiv292222" target="_blank" title="GitHub">
+            <img src="images/icons/github.svg" alt="GitHub icon" />
+          </a>
+          <a href="mailto:workwithsuhe@gmail.com" title="Email">
+            <!-- Use unicode envelope icon for email -->
+           <img src="images/icons/email.svg" alt="GitHub icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>
+          Built with <span class="heart">💚</span> by Shiv Kumar Arora — DevOps
+          Engineer | AWS | Terraform | EKS | GitOps
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+
+
+
+
+  </body>
+</html>
