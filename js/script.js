@@ -143,13 +143,13 @@ document.addEventListener('DOMContentLoaded', () => {
           appendLine('Available commands: help, whoami, skills, projects, uptime, deploy, clear');
           break;
         case 'whoami':
-          appendLine('👤 Shiv Kumar Arora – DevOps & Cloud Engineer');
+          appendLine('👤 SUHEL KHAN – DevOps & Cloud Engineer');
           break;
         case 'skills':
-          appendLine('AWS, Terraform, ArgoCD, Docker, Helm, Prometheus/Grafana, Jenkins, GitHub Actions, RBAC, Secrets');
+          appendLine('AWS, Terraform, ArgoCD, Docker, Helm, Prometheus/Grafana, Jenkins, GitHub Actions');
           break;
         case 'projects':
-          appendLine('BankApp Pipeline, Multi‑Env Terraform + Ansible, Lambda Cost Optimizer');
+          appendLine('BankApp Pipeline, Multi‑Env Terraform + Ansible, DevOps Pipeline for MERN-based Crypto Application,DevOps Pipeline for MERN E-commerce App,Real-Time Log Analysis using AWS Kinesis ');
           break;
         case 'uptime':
           appendLine('MTTR ↓ 40%, Uptime 99.99%, Cost Savings $1500+/mo');
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const bootEl = document.getElementById('boot-sequence');
   if (bootEl) {
     const bootLines = [
-      '> Booting ShivOS v3.0...',
+      '> Booting SUHELOS v3.0...',
       '️✔️ GitOps Pipeline Engine Loaded',
       '️✔️ Site Reliability Mode Engaged',
       '️✔️ Platform Resilience Module Active',
