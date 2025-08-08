@@ -306,7 +306,7 @@ $ uptime --profile
 
 
 
-    <!-- Projects Section -->
+   <!-- Projects Section -->
 <section id="projects" class="projects-section">
   <div class="container projects-content">
     <h2>Projects</h2>
@@ -336,11 +336,11 @@ $ uptime --profile
 
       <!-- Project 3: Terraform + Ansible -->
       <div class="project-card" data-modal="modal-project3">
-        <h3>Multi‑Env Terraform + Ansible</h3>
+        <h3>Multi-Env Terraform + Ansible</h3>
         <p class="project-summary">
           Automated provisioning of EC2, S3 and DynamoDB across dev, staging and prod environments.
           Hardened security with IAM policies, VPC design and Security Groups.
-          Configuration management with Ansible delivered reproducible server states and accelerated environment spin‑up.
+          Configuration management with Ansible delivered reproducible server states and accelerated environment spin-up.
         </p>
         <button class="btn btn-outline">Read Case Study</button>
       </div>
@@ -362,6 +362,16 @@ $ uptime --profile
         <p class="project-summary">
           Built a real-time data pipeline using AWS Kinesis to process application logs for threat detection and insights.
           Integrated with Elasticsearch and Kibana for visualization and set up alerts via CloudWatch and SNS.
+        </p>
+        <button class="btn btn-outline">Read Case Study</button>
+      </div>
+
+      <!-- Project 6: Lambda Cost Optimizer -->
+      <div class="project-card" data-modal="modal-project6">
+        <h3>Lambda Cost Optimizer</h3>
+        <p class="project-summary">
+          Python-based AWS Lambda scheduler leveraging CloudWatch and SNS to detect and remove stale EC2, EBS, and Elastic IP resources.
+          Automated cleanup reduced waste and generated weekly savings reports with proactive alerts for stakeholders.
         </p>
         <button class="btn btn-outline">Read Case Study</button>
       </div>
@@ -413,7 +423,7 @@ $ uptime --profile
   <div id="modal-project3" class="modal-overlay">
     <div class="modal">
       <button class="modal-close" aria-label="Close project 3">×</button>
-      <h3>Multi‑Environment Terraform &amp; Ansible</h3>
+      <h3>Multi-Environment Terraform &amp; Ansible</h3>
       <p>
         This infrastructure-as-code project focused on building a robust multi-environment (Dev, Staging, Prod) deployment architecture.
         Using Terraform, I created reusable modules to provision EC2 instances, S3 buckets, and DynamoDB tables with environment-specific configurations.
@@ -464,7 +474,26 @@ $ uptime --profile
       </p>
     </div>
   </div>
+
+  <!-- Modal 6: Lambda Cost Optimizer -->
+  <div id="modal-project6" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close project 6">×</button>
+      <h3>Lambda Cost Optimizer</h3>
+      <p>
+        Developed a fully serverless Python-based solution to automatically optimize AWS resource usage and reduce costs.
+        A scheduled AWS Lambda function, triggered via CloudWatch Events, performed periodic inventories of EC2 instances, EBS volumes, and Elastic IPs.
+        
+        The function identified stale or unused resources — such as stopped EC2 instances, orphaned EBS volumes, and unattached Elastic IPs — and removed them safely.
+        Stakeholders were notified in real-time via Amazon SNS alerts when cleanup actions were performed.
+        
+        Additionally, the system generated weekly summary reports highlighting reclaimed resources, estimated cost savings, and optimization trends.
+        This proactive approach improved operational efficiency, reduced cloud spend, and provided full transparency into resource lifecycle management.
+      </p>
+    </div>
+  </div>
 </section>
+
 <!-- Experience Section -->
 <section id="experience" class="experience-section">
   <div class="container experience-content">
@@ -576,7 +605,7 @@ $ uptime --profile
   </div>
 </section>
 
-    <!-- Pipeline Visualizer: GitHub Actions + Terraform -->
+<!-- Pipeline Visualizer: GitHub Actions + Terraform -->
 <section id="pipeline-github-actions" class="pipeline-section">
   <div class="container pipeline-content">
     <h2>CI/CD Pipeline – GitHub Actions + Terraform</h2>
@@ -614,6 +643,7 @@ $ uptime --profile
     <p class="pipeline-hint">GitHub Actions deploys to AWS using Terraform + Ansible with monitoring.</p>
   </div>
 </section>
+
 <!-- Pipeline Visualizer: Real-Time Analytics with AWS Kinesis -->
 <section id="pipeline-kinesis" class="pipeline-section">
   <div class="container pipeline-content">
@@ -652,6 +682,7 @@ $ uptime --profile
     <p class="pipeline-hint">Real-time logs processed from Fluent Bit through Kinesis → Lambda → stored & visualized in Grafana.</p>
   </div>
 </section>
+
 <!-- Pipeline Visualizer: CI/CD to AWS EKS -->
 <section id="pipeline-cicd" class="pipeline-section">
   <div class="container pipeline-content">
@@ -705,6 +736,75 @@ $ uptime --profile
     <p class="pipeline-hint">End-to-end CI/CD with quality checks, containerization, GitOps, monitoring & auto deployment to AWS EKS.</p>
   </div>
 </section>
+
+<!-- Pipeline Visualizer: AWS Lambda Cost Optimization -->
+<section id="pipeline-lambda-cost" class="pipeline-section">
+  <div class="container pipeline-content">
+    <h2>Serverless Pipeline – AWS Lambda Cost Optimization</h2>
+    <div class="pipeline-flow">
+      <div class="pipeline-step" data-step="cloudwatch">
+        <img src="images/icons/cloudwatch.svg" alt="CloudWatch logo" />
+        <span>CloudWatch Events</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" data-step="lambda">
+        <img src="images/icons/lambda.svg" alt="AWS Lambda logo" />
+        <span>Lambda (Python)</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" data-step="aws">
+        <img src="images/icons/amazonaws.svg" alt="AWS logo" />
+        <span>EC2 / EBS / Elastic IP</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" data-step="sns">
+        <img src="images/icons/sns.svg" alt="SNS logo" />
+        <span>SNS Alerts</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" data-step="s3">
+        <img src="images/icons/s3.svg" alt="AWS S3 logo" />
+        <span>S3 Weekly Reports</span>
+      </div>
+    </div>
+    <p class="pipeline-hint">Automated detection & cleanup of unused AWS resources, with alerts and cost-saving reports.</p>
+  </div>
+</section>
+
+<!-- Pipeline Visualizer: Multi-Environment Infra Provisioning -->
+<section id="pipeline-multi-env" class="pipeline-section">
+  <div class="container pipeline-content">
+    <h2>Multi-Environment Infrastructure Pipeline – Terraform + Ansible</h2>
+    <div class="pipeline-flow">
+      <div class="pipeline-step" data-step="github">
+        <img src="images/icons/github.svg" alt="GitHub logo" />
+        <span>GitHub (IaC Repo)</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" data-step="terraform">
+        <img src="images/icons/terraform.svg" alt="Terraform logo" />
+        <span>Terraform Modules</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" data-step="aws">
+        <img src="images/icons/amazonaws.svg" alt="AWS logo" />
+        <span>Provision AWS Resources</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" data-step="ansible">
+        <img src="images/icons/ansible.svg" alt="Ansible logo" />
+        <span>Ansible Config Mgmt</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" data-step="cloudwatch">
+        <img src="images/icons/cloudwatch.svg" alt="CloudWatch logo" />
+        <span>Monitoring & Alerts</span>
+      </div>
+    </div>
+    <p class="pipeline-hint">Automated provisioning & configuration across Dev, Staging & Prod with Terraform + Ansible.</p>
+  </div>
+</section>
+
 
 
     <!-- Labs Call To Action Section -->
