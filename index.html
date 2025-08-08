@@ -237,6 +237,7 @@ $ uptime --profile
   <div class="container skills-content">
     <h2>Skills &amp; Stack</h2>
     <div class="skills-columns">
+
       <!-- Terminal Panel -->
       <div class="terminal-panel">
         <div class="terminal-header">
@@ -247,16 +248,21 @@ $ uptime --profile
         <div class="terminal-body" id="terminal-body">
           <div class="terminal-line">&gt; cloud --init</div>
           <div class="terminal-line">✅ AWS &nbsp;&nbsp;✅ Azure &nbsp;&nbsp;✅ EKS</div>
+
           <div class="terminal-line">&gt; iac --deploy</div>
           <div class="terminal-line">🛠️ Terraform &nbsp;&nbsp;🧠 Ansible &nbsp;&nbsp;📜 CloudFormation</div>
+
           <div class="terminal-line">&gt; cicd --trigger</div>
           <div class="terminal-line">⚙️ Jenkins &nbsp;&nbsp;🔁 GitHub Actions &nbsp;&nbsp;🎯 Helm</div>
+
           <div class="terminal-line">&gt; monitor --watch</div>
           <div class="terminal-line">📈 Prometheus &nbsp;&nbsp;📊 Grafana &nbsp;&nbsp;📡 CloudWatch</div>
+
           <div class="terminal-line">&gt; secure --lockdown</div>
           <div class="terminal-line">🔐 IAM &nbsp;&nbsp;🔑 Secrets Manager &nbsp;&nbsp;🎛️ RBAC</div>
         </div>
       </div>
+
       <!-- Icon Grid -->
       <div class="icon-grid">
         <div class="icon-item" title="Amazon Web Services">
@@ -267,9 +273,6 @@ $ uptime --profile
         </div>
         <div class="icon-item" title="Terraform">
           <img src="images/icons/terraform.svg" alt="Terraform logo" />
-        </div>
-        <div class="icon-item" title="CloudFormation">
-          <img src="images/icons/cloudformation.svg" alt="CloudFormation logo" />
         </div>
         <div class="icon-item" title="Ansible">
           <img src="images/icons/ansible.svg" alt="Ansible logo" />
@@ -295,8 +298,8 @@ $ uptime --profile
         <div class="icon-item" title="Grafana">
           <img src="images/icons/grafana.svg" alt="Grafana logo" />
         </div>
-        <div class="icon-item" title="CloudWatch">
-          <img src="images/icons/cloudwatch.svg" alt="CloudWatch logo" />
+        <div class="icon-item" title="Fluent Bit">
+          <img src="images/icons/fluentbit.svg" alt="Fluent Bit logo" />
         </div>
         <div class="icon-item" title="Linux">
           <img src="images/icons/linux.svg" alt="Linux logo" />
@@ -308,9 +311,11 @@ $ uptime --profile
           <img src="images/icons/bash.svg" alt="Bash logo" />
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
 
 
     <!-- Projects Section -->
@@ -609,7 +614,7 @@ $ uptime --profile
       </div>
       <div class="pipeline-arrow">→</div>
       <div class="pipeline-step" data-step="aws">
-        <img src="images/icons/aws.svg" alt="AWS logo" />
+        <img src="images/icons/amazonaws.svg" alt="AWS logo" />
         <span>AWS (EC2 / EKS / RDS)</span>
       </div>
       <div class="pipeline-arrow">→</div>
@@ -728,55 +733,69 @@ $ uptime --profile
     </section>
 
     <!-- Contact Section -->
-    <!-- <section id="contact" class="contact-section">
-      <div class="container contact-content">
-        <h2>Get In Touch</h2>
-        <form id="contact-form" class="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p id="form-status" class="form-status"></p>
-        </form> -->
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/devops-engineer1/" target="_blank" title="LinkedIn">
-            <img src="images/icons/linkedin.svg" alt="LinkedIn icon" />
-          </a>
-          <a href="https://github.com/SUHEL782" target="_blank" title="GitHub">
-            <img src="images/icons/github.svg" alt="GitHub icon" />
-          </a>
-          <a href="mailto:workwithsuhe@gmail.com" title="Email">
-            <!-- Use unicode envelope icon for email -->
-           <img src="images/icons/email.svg" alt="GitHub icon" />
-          </a>
+<section id="contact" class="contact-section">
+  <div class="container contact-content">
+    <h2>Get In Touch</h2>
+
+    <form id="contact-form" class="contact-form"
+  <form action="https://formsubmit.co/workwithsuhel@gmail.com" method="POST" class="form" data-form></form>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
         </div>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-content">
-        <p>
-          Built with <span class="heart">💚</span> by SUHEL KHAN — DevOps
-          Engineer | AWS | Terraform | EKS | GitOps
-        </p>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
       </div>
-    </footer>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <!-- Hidden fields for FormSubmit -->
+      <input type="hidden" name="_next" value="https://my-portfolio-app-theta-one.vercel.app/">
+      <input type="hidden" name="_subject" value="New message from portfolio site">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </div>
+</section>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/devops-engineer1/" target="_blank" title="LinkedIn">
+        <img src="images/icons/linkedin.svg" alt="LinkedIn icon" />
+      </a>
+      <a href="https://github.com/SUHEL782" target="_blank" title="GitHub">
+        <img src="images/icons/github.svg" alt="GitHub icon" />
+      </a>
+      <a href="mailto:workwithsuhe@gmail.com" title="Email">
+        <img src="images/icons/email.svg" alt="Email icon" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-content">
+    <p>
+      Built with <span class="heart">💚</span> by SUHEL KHAN — DevOps Engineer | AWS | Terraform | EKS | GitOps
+    </p>
+  </div>
+</footer>
+
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>
