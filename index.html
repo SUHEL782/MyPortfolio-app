@@ -387,15 +387,10 @@ $ uptime --profile
       <button class="modal-close" aria-label="Close project 1">×</button>
       <h3>BankApp – DevOps Pipeline</h3>
       <p>
-        This project involved designing and deploying a secure and scalable CI/CD pipeline for a microservices-based banking platform.
-        Jenkins was used as the automation server, integrated with Docker and Helm to manage containerized deployments.
-        Each service was built as a separate container image and deployed to AWS EKS using Helm charts with rollback strategies enabled via Helm hooks.
-
-        Infrastructure was defined using Terraform modules, which created AWS resources such as EKS clusters, IAM roles, and security groups. 
-        Kubernetes Horizontal Pod Autoscalers (HPA) were implemented to automatically scale services based on resource usage metrics.
-
-        Observability was enhanced using Amazon CloudWatch for logs and metrics, while Grafana provided real-time dashboards. 
-        This setup improved release velocity and reduced deployment errors, enhancing operational confidence in production environments.
+        <strong>Situation:</strong> A microservices-based banking platform needed a reliable, secure, and automated way to deliver frequent updates without impacting customer experience.<br><br>
+        <strong>Task:</strong> I was responsible for designing and implementing a CI/CD pipeline that enabled scalable deployments, rollback capabilities, and observability.<br><br>
+        <strong>Action:</strong> Built a CI/CD pipeline with Jenkins, Docker, and Helm; provisioned AWS infrastructure with Terraform; configured Kubernetes HPA; enhanced observability with CloudWatch and Grafana; implemented rollback strategies with Helm hooks.<br><br>
+        <strong>Result:</strong> Reduced deployment errors and downtime, accelerated release velocity, and improved system reliability and developer confidence.
       </p>
     </div>
   </div>
@@ -406,15 +401,10 @@ $ uptime --profile
       <button class="modal-close" aria-label="Close project 2">×</button>
       <h3>DevOps Pipeline for MERN-based Crypto Application</h3>
       <p>
-        Developed a CI/CD pipeline for a cryptocurrency tracking application built with the MERN stack (MongoDB, Express.js, React, Node.js).
-        The pipeline used GitHub Actions to automate testing, building, and deployment of Dockerized microservices to AWS EKS.
-
-        Terraform was used to provision infrastructure including VPCs, subnets, EKS clusters, and RDS. Ansible playbooks handled EC2 configuration, ensuring secure and repeatable setups across environments.
-
-        Prometheus and Grafana were configured for monitoring application health and infrastructure metrics. 
-        Fluent Bit shipped container logs to AWS CloudWatch, enabling centralized log aggregation and easier debugging.
-
-        This pipeline achieved faster feature delivery, improved reliability, and met strict compliance and availability requirements.
+        <strong>Situation:</strong> A cryptocurrency tracking application built with the MERN stack required fast, secure, and repeatable deployments across environments.<br><br>
+        <strong>Task:</strong> I was tasked with creating a CI/CD pipeline that automated testing, container builds, infrastructure provisioning, and monitoring.<br><br>
+        <strong>Action:</strong> Developed a CI/CD pipeline using GitHub Actions for Dockerized microservices; provisioned VPC, EKS, and RDS with Terraform; applied Ansible playbooks for consistent EC2 configs; configured Prometheus/Grafana; centralized logs with Fluent Bit to CloudWatch.<br><br>
+        <strong>Result:</strong> Increased release speed, simplified debugging, and ensured compliance and availability.
       </p>
     </div>
   </div>
@@ -425,15 +415,10 @@ $ uptime --profile
       <button class="modal-close" aria-label="Close project 3">×</button>
       <h3>Multi-Environment Terraform &amp; Ansible</h3>
       <p>
-        This infrastructure-as-code project focused on building a robust multi-environment (Dev, Staging, Prod) deployment architecture.
-        Using Terraform, I created reusable modules to provision EC2 instances, S3 buckets, and DynamoDB tables with environment-specific configurations.
-
-        Networking was secured using custom VPCs, subnets, and strict security group rules. IAM roles and policies were fine-tuned to adhere to the principle of least privilege.
-
-        Ansible was used for configuration management, ensuring idempotent deployment of software, system updates, and security hardening.
-        Playbooks were version-controlled and parameterized to support fast environment spin-up with minimal errors.
-
-        As a result, the team reduced deployment time by 40% and saved up to 20% in AWS resource costs by optimizing provisioning strategies.
+        <strong>Situation:</strong> The team required multi-environment infrastructure (Dev, Staging, Prod) that was secure, reproducible, and easy to manage.<br><br>
+        <strong>Task:</strong> I was responsible for automating infrastructure provisioning and configuration management to reduce errors and improve speed.<br><br>
+        <strong>Action:</strong> Built Terraform modules for reusable EC2, S3, and DynamoDB provisioning; designed secure networking (VPCs, subnets, security groups); applied IAM policies; automated configuration with Ansible.<br><br>
+        <strong>Result:</strong> Reduced deployment time by 40%, lowered AWS costs by 20%, and improved reliability with automated infrastructure.
       </p>
     </div>
   </div>
@@ -444,14 +429,10 @@ $ uptime --profile
       <button class="modal-close" aria-label="Close project 4">×</button>
       <h3>DevOps Pipeline for MERN E-commerce App</h3>
       <p>
-        Led the end-to-end DevOps implementation for a MERN-based e-commerce platform. Jenkins pipelines were set up to automate testing, Docker builds, and deployment to AWS EKS clusters using Helm charts.
-
-        Terraform provisioned the cloud infrastructure including VPC, EKS, RDS, and IAM resources. 
-        Ansible automated the software configuration and environment bootstrapping on EC2 instances, ensuring consistent system states.
-
-        Real-time observability was implemented using Fluent Bit for log forwarding to CloudWatch and Prometheus/Grafana for metric visualization and alerting.
-
-        AWS GuardDuty was enabled to monitor malicious activity and harden security posture. The pipeline supported blue/green deployments and zero-downtime updates, improving developer productivity and user experience.
+        <strong>Situation:</strong> A MERN-based e-commerce platform needed a robust CI/CD pipeline to handle rapid feature delivery while ensuring uptime and security.<br><br>
+        <strong>Task:</strong> I was assigned to design and implement the full DevOps pipeline and supporting infrastructure.<br><br>
+        <strong>Action:</strong> Created Jenkins pipelines for testing, Docker builds, and Helm-based deployments; provisioned cloud infrastructure with Terraform; automated configurations with Ansible; set up observability with Fluent Bit and Prometheus/Grafana; enabled AWS GuardDuty and blue/green deployments.<br><br>
+        <strong>Result:</strong> Delivered zero-downtime deployments, boosted developer productivity, and improved user experience with secure, reliable releases.
       </p>
     </div>
   </div>
@@ -462,15 +443,10 @@ $ uptime --profile
       <button class="modal-close" aria-label="Close project 5">×</button>
       <h3>Real-Time Log Analysis using AWS Kinesis</h3>
       <p>
-        Created a real-time data pipeline to analyze application logs for anomalies, usage trends, and potential security threats.
-        AWS Kinesis Data Streams was used for high-throughput ingestion of log events from multiple microservices and environments.
-
-        Lambda functions processed the streaming data to filter and transform logs before storing them in Amazon Elasticsearch (OpenSearch).
-        Kibana dashboards visualized metrics like request latency, error spikes, and API usage patterns in real time.
-
-        CloudWatch Alarms and custom metrics triggered alerts via SNS for critical thresholds, such as sudden traffic surges or suspicious login activity.
-
-        This setup enabled proactive monitoring, reduced mean-time-to-detection (MTTD), and enhanced situational awareness for operations and security teams.
+        <strong>Situation:</strong> Operations and security teams needed real-time insights into application logs to detect anomalies and threats quickly.<br><br>
+        <strong>Task:</strong> I was tasked with designing and implementing a scalable real-time log analysis pipeline.<br><br>
+        <strong>Action:</strong> Built a Kinesis Data Streams ingestion pipeline; processed logs with Lambda; indexed logs in Amazon Elasticsearch (OpenSearch); created Kibana dashboards; set CloudWatch alarms with SNS alerts.<br><br>
+        <strong>Result:</strong> Reduced mean-time-to-detection (MTTD), improved visibility, and strengthened security posture.
       </p>
     </div>
   </div>
@@ -481,18 +457,15 @@ $ uptime --profile
       <button class="modal-close" aria-label="Close project 6">×</button>
       <h3>Lambda Cost Optimizer</h3>
       <p>
-        Developed a fully serverless Python-based solution to automatically optimize AWS resource usage and reduce costs.
-        A scheduled AWS Lambda function, triggered via CloudWatch Events, performed periodic inventories of EC2 instances, EBS volumes, and Elastic IPs.
-        
-        The function identified stale or unused resources — such as stopped EC2 instances, orphaned EBS volumes, and unattached Elastic IPs — and removed them safely.
-        Stakeholders were notified in real-time via Amazon SNS alerts when cleanup actions were performed.
-        
-        Additionally, the system generated weekly summary reports highlighting reclaimed resources, estimated cost savings, and optimization trends.
-        This proactive approach improved operational efficiency, reduced cloud spend, and provided full transparency into resource lifecycle management.
+        <strong>Situation:</strong> AWS environments had unused resources (EC2, EBS, Elastic IPs) that increased cloud spend unnecessarily.<br><br>
+        <strong>Task:</strong> I was responsible for creating an automated, serverless solution to optimize resource usage and reduce costs.<br><br>
+        <strong>Action:</strong> Developed a Python-based Lambda function triggered by CloudWatch Events; automated stale resource cleanup; sent real-time SNS notifications; generated weekly cost-savings reports.<br><br>
+        <strong>Result:</strong> Reduced cloud waste, improved cost efficiency, and delivered consistent savings with transparent reporting.
       </p>
     </div>
   </div>
 </section>
+
 
 <!-- Experience Section -->
 <section id="experience" class="experience-section">
